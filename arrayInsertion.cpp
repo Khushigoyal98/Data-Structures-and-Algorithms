@@ -26,6 +26,9 @@ public:
         if (index == 0) {
             insertAtBeg(x);
             return;
+        }else if(index==size-1){
+            insertAtEnd(x);
+            return;
         }
 
         for (int i = size - 1; i >= index; i--) {
