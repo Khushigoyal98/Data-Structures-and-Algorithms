@@ -32,7 +32,7 @@ void push(int data){
 int pop(){
 	if(isEmpty()){
 		cout<<"Stack Underflow";
-		return -1;
+		exit(0);
 	}
 	return stack[top--];
 }
@@ -40,7 +40,7 @@ int pop(){
 int peek(){
 	if(isEmpty()){
 		cout<<"Empty Stack";
-		return -1;
+		exit(0);
 }
 return stack[top];
 }
